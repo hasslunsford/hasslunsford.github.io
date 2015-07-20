@@ -41,15 +41,70 @@
   <li>Provide minimal options that are the best combination of price and schedule, versus overwhelming the user with many options</li>
 </ul>
 
-<p><img src="images/bb-home-redundancy.png"></p>
+<h3>Design Approach</h3>
 
+<p>As a bay area native, I presently live in Oakland and mainly commmuted to past jobs in San Francisco. I have also always had a car since I like to go on local and regional adventures and have family in the area. When traveling within California, I drive to everywhere I go in Northern California, and evenly split Southern California trips between driving and air travel, though I have done rail/bus in the past.</p>
 
+<p>I thought about how a bay area resident like myself might get by without a car, and drew up the local and regional transportation options.</p>
 
-<h3>Solution Mockups</h3>
+<p><img src="images/bayarea.png"></p>
 
-<p><b>Updated Homepage</b> <a href="http://invis.io/VS3GN438K">see it simulated in your desktop browser</a></p>
+<p>I boiled my options down to these kinds of transport:</p>
 
-<p><img src="images/bb-home-concept.jpg"></p>
+<ul>
+  <li>City Bus (Muni in San Francisco, AC transit in East Bay, Samtrans on Peninsula, VTA in South Bay)</li>
+  <li>City Rail (BART, Caltrain, MUNI Metro)</li>
+  <li>Ferries</li>
+  <li>Regional Bus (Greyhound, Megabus, etc.)</li>
+  <li>Regional Rail (Amtrak)</li>
+</ul>
+
+<p>I then thought about the pros and cons of Uber:</p>
+
+<ul>
+  <li>You immediately see on a map the closest uber options by distance and time near you</li>
+  <li>There are very few steps to hail an uber.</li>
+  <li>Pricing info (estimates) are there if you need it</li>
+  <li>HOWEVER, it's very expensive for >30 min trips</li>
+</ul>
+
+<p>Google Maps mobile apps are great at generating public transit routings, but:</p>
+
+<ul>
+  <li>It doesn't do live transit times or map visuals like uber</li>
+  <li>It doesn't have detailed pricing information.</li>
+  <li>It leaves it up to you to re-route yourself if you miss connections.</li>
+</ul>
+
+<h3>Workflow of Proposed Solution</h3>
+
+<ul>
+  <li>Like Uber, the default screen shows you your current location and transportation options around you. Unlike Uber, you should be able to view multiple transit options nearby at once (toggling on/off their display from the map).</li>
+  <li>If your origin point is not your current location, you can drag the map around to change it, like uber. Otherwise, you would proceed to entering your destination via the search bar at the top.</li>
+  <li>Once you select one of the destinations from the type-ahead/auto-complete list, you would be presented with optimal schedule/price options to get you there via public transit, via multiple modes if applicable.</li>
+  <li>Once you select a transit combination, you end up on a map screen with the first step of your guided transit journey. You can exit out of this or view the entire route overview, but by default it tracks your progress to the next waypoint. You can advance to the next instruction by paginating the step bar at the bottom of the screen. Once the app detects you passing the current waypoint, it would smartly detect this and ask you if you made it onto the next segment instruction.</li>
+  <li>If you missed the current connection, the app would present you with alternative public transit routing options, helping you complete your journey in the best possible time.</li>
+</ul>
+
+<p>Wireframe sketches:</p>
+
+<p><img src="images/wireframes.png"></p>
+
+<h3>Low Fidelity Mockups</h3>
+
+<p><b>Default Inactive Screen:</b><br /><img src="images/Default_Inactive_Screen.png"></p>
+
+<p><b>Enter Destination:</b><br /><img src="images/Enter_Destination.png"></p>
+
+<p><b>Select a Routing:</b><br /><img src="images/Select_Route.png"></p>
+
+<p><b>Example "Turn-by-Turn" transit steps:</b><br /><img src="images/Step1.png"><br /><img src="images/Step2.png"><br /><img src="images/Step3.png"><br /><img src="images/Step4.png"></p>
+
+<p><b>En Route Double-Check:</b><br /><img src="images/Step5.png"></p>
+
+<h3>High Fidelity Prototype</h3>
+
+<p>You can interact with  high fidelity mockups through this InVision iFrame:</p>
 
       <footer class="site-footer">
         <span class="site-footer-credits">Copyright &copy; 2015 <a href="http://hasslunsford.com">Hass Viajar Lunsford</a>.</span>
