@@ -21,60 +21,29 @@
 
 <p>Design an everyday, affordable solution for public transit that is inspired by the simplicity and ease-of-use of Uber, that is used primarily locally but can also work for destinations beyond your metropolitan area.</p>
 
+<p>Inspiration: Uber, Google Maps, Nextbus, Transporter</p>
+
+<h3>Why is Uber amazing?</h3>
+
+<p>Push a button and your own private ride is moments away from picking you up. By optimizing for the quickest use case (starting off on the previously used transport option and without a destination or fare estimate predetermined) you can be on your way quickly. If you’re more price sensitive, you can perform a fare estimate which will also provide you with extra functionality like shareable ETA.</p>
+
+<h3>What are the existing app solutions for public transit?</h3>
+
+<p>Google Maps does a good job, and always has, of providing static directions combining multiple public transit options for a given origin and destination. However, one gap in its experience is its reliance on *scheduled* transit times, and often does not tap into live transit times. Other apps like Transporter, and webapps like NextBus, provide live transit times, but for limited agencies. Google Maps directions are also pretty static - relying on the user to follow steps manually rather than “tracking you” and smartly telling you the next step, similar to turn-by-turn driving directions.</p>
+
+<h3>How might one design a public transit app that combines the best of Uber and public transit directions experiences?</h3>
+
+<p>The way I see it, friction in setting up a routing via public transport routing can be reduced vs. what Google Maps currently provides. Lessons learned from the elegance of Uber and the shortcomings of Google Maps can be applied in the following ways:</p>
+
 <ul>
-  <li>The slogan "NOTHING IS LOST" was repeated twice</li>
-  <li>The "What is black buddha?" and "Learn More" links could be consolidated</li>
-  <li>I expected a hero image setting the tone for the brand to be combined with the headline up top</li>
-  <li>The introductory bar at the top, while helpful for new users, unnecessarily clutters real estate that should be reserved for branding and functional navigation only</li>
-  <li>I expected to be able to click on "EAT" "PLAY" and "SHOP" as they look like features of the service, and are of similar weight to the cities above them</li>
+  <li>Optimize for quickest use case (departing current location now) but provide for alternate cases (departing elsewhere and/or at a later time)</li>
+  <li>Provide guided or semi-guided navigation tracking en route, ensuring the user has options in the event of missing steps</li>
+  <li>Provide minimal options that are the best combination of price and schedule, versus overwhelming the user with many options</li>
 </ul>
 
 <p><img src="images/bb-home-redundancy.png"></p>
 
-<p>Additionally, visually the page is missing some contrast to differentiate important, actionable content from ambient imagery. While I understand the purpose of the dark color palette is to align with the brand's premium look-and-feel, uber's website is a good example of one  that utilizes dark, premium branding while still adopting the best practice of light backgrounds for important, actionable content.</p>
 
-<p><img src="images/uber-web.png"></p>
-
-<p><b>Note the contrast between different sections, and the use of light background to make actionable content stand out (the features below the hero image)</b></p>
-
-<p>Navigationally, the content structure is mostly as expected.</p>
-
-<ul>
-  <li>At the top level of the homepage, we can navigate to city pages and the about page. Globally, we can change the language and access the user menu.</li>
-  <li>Once of the city level, we can still navigate to other cities, and the hero content here is the city intro video. Below that are the individual listings within the city, shown in a default "all" category filter, and in a default grid view with options to narrow the category or to toggle map view.</li>
-  <li>On the listing level –the core of the site's value– the hero content is the listing video, with location and further information below, then a listing photo gallery, and lasty discovery navigation encourage browsing of related listings.</li>
-  <li><b>The one core issue at the listing level is that video actions take the place of global city navigation, inconsistent from the homepage and city level navigation bar:</b> these actions are more expected with the video player controls, and the nav bar should be globally consistent.</li>
-</ul>
-
-<p><img src="images/bb-original-flow.png"></p>
-
-<p>One last usability issue is the way content tiles are accessed:</p>
-
-<p><img src="images/bb-play-usability.gif"></p>
-
-<p>As you can see from the screen capture, this is a little awkward for both desktop and touchscreen users:</p>
-
-<ul>
-  <li>On desktop, the rollover seems to indicate I can click anywhere on the tile to access the next page (normal expectation). However, I must roll over the center of the content to reveal a secondary button state to actually take me there.</li>
-  <li>On mobile, a tap of the tile toggles the secondary state, after which I must tap the tile again to navigate to the destination.</li>
-  <li><b>Friction can be removed by implementing the standard, user-expected behavior of one-click to navigate</b></li>
-</ul>
-
-<h3>Design Approach</h3>
-
-<p>I propose to improve the first time experience of new users, and also ease access of content for returning users, by harmonizing the homepage design, making the global navigation consistent, and increasing content contrast on pages to add clarity.</p>
-
-<p><b>Below is a wireframe of the harmonized homepage I envision:</b></p>
-
-<p><img src="images/bb-home-wireframe.png"></p>
-
-<p>Some notes about this concept:</p>
-
-<ul>
-  <li>Since Black Buddha's key differentiator is high-production video for curated listings, consider having an ambient homepage hero image (like Airbnb) rather than just a static photo.</li>
-  <li>Consider introducing Black Buddhe via the "What is Black Buddha?" by playing the introductory video on the about page in a modal. Users could still access the full about page from the footer.</li>
-  <li>Add more content around the "EAT" "PLAY" and "SHOP" categories explaining how these Black Buddha listings are different than other sites. This could be as simple as adding sub-copy, or as detailed as deploying modal content showcasing the differentation.</li>
-</ul>
 
 <h3>Solution Mockups</h3>
 
